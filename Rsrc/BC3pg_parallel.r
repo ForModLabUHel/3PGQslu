@@ -13,9 +13,10 @@ source("Rsrc/functions.r")
 load('myData/input3pgLists.rdata')
 
 sites <- c(1:26,28:57)#length(allInputs$site)
+nSites <- length(sites)
 pErr <- c(0.1,0.001)
 nCores = 1
-climate <- climate[1:1000,]
+# climate <- climate[1:1000,]
 
 ## calibration settings
 iterations=3e3
